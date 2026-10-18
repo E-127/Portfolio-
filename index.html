@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Lutomia Ephraim Kakala, a Health Promotion and Sports Science student at MMUST.">
+    <title>Lutomia Ephraim Kakala | Portfolio</title>
+
+    <style>
+        :root {
+            --primary: #087f5b;
+            --dark: #12332b;
+            --light: #f3f8f5;
+            --white: #ffffff;
+            --text: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: var(--light);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .logo {
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #6ee7b7;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #12332b, #087f5b);
+            color: white;
+            padding: 85px 7%;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border: 3px solid white;
+            border-radius: 50%;
+            background: #d1fae5;
+            color: var(--dark);
+            display: grid;
+            place-items: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(28px, 5vw, 45px);
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 12px 23px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+
+        section {
+            padding: 60px 7%;
+            scroll-margin-top: 20px;
+        }
+
+        section h2 {
+            color: var(--dark);
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 28px;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .card ul {
+            padding-left: 20px;
+        }
+
+        .education {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .contact {
+            text-align: center;
+            background: #e4f3eb;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            overflow-wrap: anywhere;
+        }
+
+        .contact a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 25px 7%;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 60px 6%;
+            }
+
+            section {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Ephraim Kakala</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="avatar">EK</div>
+
+        <h1>Lutomia Ephraim Kakala</h1>
+
+        <p>
+            Health Promotion & Sports Science Student |
+            Aspiring Health Promotion Professional |
+            Sports and Digital Skills Enthusiast
+        </p>
+
+        <a href="#about" class="btn">Discover My Profile</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a motivated and adaptable student pursuing a
+                Bachelor of Science in Health Promotion and Sports
+                Science at Masinde Muliro University of Science and
+                Technology (MMUST).
+            </p>
+
+            <p>
+                I am interested in promoting healthy lifestyles,
+                physical activity, community well-being and digital
+                engagement. I value teamwork, communication,
+                problem-solving and continuous learning.
+            </p>
+
+            <p>
+                My goal is to gain practical experience, strengthen
+                my professional abilities and contribute positively
+                to organizations and communities.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="education card">
+            <h3>Masinde Muliro University of Science and Technology</h3>
+
+            <p><strong>Qualification:</strong> Bachelor of Science
+                in Health Promotion and Sports Science</p>
+
+            <p><strong>Location:</strong> Kakamega, Kenya</p>
+
+            <p><strong>Study period:</strong> To be updated</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>💻 Computer Literacy</h3>
+                <p>Basic computer applications and digital learning.</p>
+            </div>
+
+            <div class="card">
+                <h3>🗣️ Communication</h3>
+                <p>Sharing information clearly and respectfully.</p>
+            </div>
+
+            <div class="card">
+                <h3>🤝 Teamwork</h3>
+                <p>Collaborating with others towards common goals.</p>
+            </div>
+
+            <div class="card">
+                <h3>🧠 Problem-Solving</h3>
+                <p>Identifying challenges and seeking practical solutions.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌱 Adaptability</h3>
+                <p>Willingness to learn, improve and adjust to new challenges.</p>
+            </div>
+
+            <div class="card">
+                <h3>💚 Health Promotion</h3>
+                <p>Interest in health education and community well-being.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects & Practical Learning</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Project Learning</h3>
+                <p>
+                    Participated in project-based learning activities.
+                    Specific project details and outcomes will be added
+                    as they become available.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Digital Skills Development</h3>
+                <p>
+                    Building knowledge of digital tools and online
+                    engagement through continued learning and practice.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Health & Sports</h3>
+                <p>
+                    Developing academic knowledge in health promotion,
+                    sports science and physical well-being.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="interests">
+        <h2>Career Interests</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Health Promotion</h3>
+                <p>Health education, prevention and healthier communities.</p>
+            </div>
+
+            <div class="card">
+                <h3>Sports Science</h3>
+                <p>Physical activity, exercise and sports participation.</p>
+            </div>
+
+            <div class="card">
+                <h3>Digital Engagement</h3>
+                <p>Using digital platforms to communicate and share information.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Let's Connect</h2>
+
+        <p><strong>Location:</strong> Kakamega, Kenya</p>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:ephraimkakalalutomia@gmail.com">
+                ephraimkakalalutomia@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <strong>Phone:</strong>
+            <a href="tel:+254111405008">+254 111 405008</a>
+        </p>
+
+        <p>
+            I welcome opportunities to learn, collaborate and gain
+            practical experience in my areas of interest.
+        </p>
+
+        <a class="btn"
+           href="mailto:ephraimkakalalutomia@gmail.com?subject=Professional%20Opportunity">
+            Send Me an Email
+        </a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> Lutomia Ephraim Kakala.</p>
+    <p>Personal Portfolio | Health Promotion • Sports Science • Digital Skills</p>
+    <p>Designed as part of digital skills development.</p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+</script>
+
+</body>
+</html>
